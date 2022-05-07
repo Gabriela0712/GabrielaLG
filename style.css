@@ -1,0 +1,506 @@
+:root{
+    --color-primario:#e9936b;
+    --color-secundario: #79766f;
+    --color-terciario:white;
+    --color-cuarto:rgb(14, 13, 12);
+    --color-quinto:#8f1010;
+    --letra: 'Radio Canada', sans-serif;
+}
+
+*{
+    text-decoration: none;
+    font-family: var(--letra);
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+font-size: 16px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: inline;
+    margin: auto;
+}
+.menu a{
+    color:var(--color-quinto);
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.otros a{
+    color: var(--color-cuarto);
+}
+
+.otros a:hover{
+    text-decoration: underline;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.3em;
+    flex-wrap: wrap;
+    
+}
+
+.logotipo{
+    width: 150px;
+
+}
+
+nav ul li{
+    display: inline;
+    padding: 0em 1.875em;
+    margin-bottom: 10em;
+    text-align: center;
+    
+}
+
+.cuenta a{
+    text-align: left;
+    color: var(--color-terciario);
+    background-color: var(--color-primario);
+    padding: 0.6em;
+    border-radius: 30px;
+}
+
+
+
+.cuenta a:hover{
+    -webkit-box-shadow: -3px 6px 29px -10px rgba(8,0,0,0.71);
+-moz-box-shadow: -3px 6px 29px -10px rgba(0,0,0,0.71);
+box-shadow: -3px 6px 29px -10px rgba (0,0,0,0.71);
+transition: 0.5s;
+background-color:var(--color-secundario);
+}
+
+
+
+section .dos{
+    background-color: var(--color-secundario);
+   
+    padding-bottom: 1.3em;
+    padding-top: 1.3em
+}
+
+.variaciones{ 
+    background-color: var(--color-terciario);
+    border-radius: 10px;
+    padding: 1.3em;
+
+}
+
+h5{
+    text-align: center;
+    padding-top: 1.3em;
+}
+
+.variaciones a{
+    color: var(--color-quinto);
+}
+
+.variaciones a:hover{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+.logos{ 
+    padding: 1.875em 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+.marca{
+    margin: auto;
+    padding-left: 3.125em;
+}
+
+.marca h1{
+    color:var(--color-primario);
+    font-size: 3.125em;
+    padding-left: 1.875em;
+}
+
+.marca p{
+    color: var(--color-cuarto);
+    padding: 1.875em;
+}
+
+.variaciones a{
+    color: var(--color-primario);
+}
+
+.variaciones a:hover{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
+
+
+.uno{
+    display: flex;
+
+}
+
+b{
+    font-size: 50px;
+}
+
+.nuestro-logo{
+
+    padding: 50px 0px 0px 80px;
+
+}
+
+.dos h1{
+    color: var(--color-primario);
+    font-size: 50px;
+}
+
+.nuestro-logo p{
+    color: var(--color-cuarto)
+}
+
+.parrafo{
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+
+.flex{
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.slogan{
+    color: var(--color-primario);
+    align-items: center;
+    
+}
+
+.redes{
+    color: var(--color-secundario);
+    padding-top: 1.875em;
+}
+
+.redes ul li{
+    display: inline;
+    justify-content: center;
+}
+
+.redes ul li a{
+    color: var(--color-secundario);
+    font-size: 1.3em;
+    padding: 1.3em;
+}
+
+.redes ul li a:hover{
+    color: var(--color-primario);
+}
+
+
+.pie a{
+    border: 20px 0px;
+}
+
+
+.otros{ 
+    display: flex;
+    padding: 0.625em
+}
+
+
+.otros h4{
+    color: var(--color-primario);
+}
+
+.flex{
+ display: flex;
+align-items: center;    
+}
+
+footer{ 
+    background-color: var(--color-terciario);
+}
+
+.pie .item{
+    padding: 1.25em;
+    margin: 0.625em;
+}
+
+.registro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px 70px 80px;
+}
+
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    header .menu{
+        flex-direction: column;
+    }
+    
+    .logotipo{
+        flex-basis: 50%;
+        padding-bottom: 1.875em;
+    }
+    .menu-items {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .cuenta{
+        font-size: 1.563;
+        padding-top: 1.875em;
+        padding-bottom: 1.87em;
+    }
+    
+    .uno{
+        flex-direction: column;
+    }
+    
+    h1{
+        font-size: 3.75em;
+        text-align: left;
+        padding-left: 0em;
+    }
+    p{
+        font-size: 1.563em;
+        padding-bottom: 0em;
+        line-height: 2.188em;
+    }
+    
+    footer .flex{
+        flex-direction: column;
+        padding-top: 1.875em;
+    }
+    
+    .slogan h1 {
+        font-size: 3.125em;
+    }
+    
+    .redes{
+        text-align: center;
+    }
+    
+    .redes ul li a{
+        font-size: 1.875em;
+        padding: 0em 3.125em;
+    }
+    
+    .otros{
+        flex-wrap: wrap;
+        padding-top: 31.87em;
+        padding-bottom: 1.875em;
+        text-align: left;
+        justify-content: center;
+    }
+    
+    .pie {
+        font-size: 1.875em;
+        padding: 0.625em 1.563em;
+        text-align: left;
+    }
+    
+    .registro{
+        align-items: flex-start;
+    }
+    
+  
+    /*Aquí van las propiedades y valores según el dispositivo*/
+
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        width: 100%;
+    }
+
+    header .menu{
+        flex-direction: column;
+    }
+    
+    .logotipo{
+        flex-basis: 80%;
+        padding-bottom: 30px;
+    }
+    .menu-items {
+        font-size: 1.563em;
+        padding-bottom: 1.25;
+    }
+    
+    .menu-items ul li{
+        padding: 0.313em 0.313em;
+    }
+    .cuenta{
+        font-size: 1.563;
+      padding: 1.875em 1.875em;
+    }
+    
+    .uno{
+        flex-direction: column;
+    }
+    
+    h1{
+        font-size: 3.75em;
+        text-align: left;
+        padding-left: 0em;
+    }
+
+    p{
+        font-size: 1.563em;
+        padding-bottom: 0em;
+        line-height: 35px;
+    }
+    
+    .logos{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    footer .flex{
+        flex-direction: column;
+        padding-top: 1.875em;
+    }
+    
+    .slogan h1 {
+        font-size: 1.875em;
+        text-align: center;
+    }
+    
+    .redes{
+        text-align: center;
+    }
+    
+    .redes ul li a{
+        font-size: 2.5em;
+        padding: 0em 1.25em;
+    }
+    
+    .otros{
+        flex-wrap: wrap;
+        padding-top: 1.875em;
+        padding-bottom: 1.875em;
+        text-align: left;
+        justify-content: center;
+    }
+    
+    .pie {
+        font-size: 1.25em;
+        padding: 0.625em 1.563em;
+        text-align: left;
+    }
+    
+    .registro{
+        flex-direction: column;
+    }
+    }
+
+   /*Aquí van las propiedades y valores según el dispositivo*/
+
+
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+        body{
+            width: 100%;
+        }
+    
+        header .menu{
+            flex-direction: column;
+        }
+        
+        .logotipo{
+            flex-basis: 90%;
+            padding-bottom: 1.25em
+        }
+        .menu-items {
+            font-size: 1.563em;
+            padding: 0.625em 1.25em;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .menu-items ul li{
+            padding: 0.625em 0.625em;
+            margin-top: 0em;
+        }
+        .cuenta{
+            font-size: 1.563em;
+        padding: 1.875em ;
+        }
+        
+        .uno{
+            flex-direction: column;
+        }
+        
+        .container h1{
+            font-size: 1.875em;
+            text-align: left;
+            padding-left: 0em;
+        }
+    
+        p{
+            font-size: 1.563em;
+            padding-bottom: 0em;
+            line-height: 2.188em;
+        }
+        
+        .logos{
+            flex-direction: column;
+            justify-content: center;
+            width:100%;
+        }
+    
+        footer .flex{
+            flex-direction: column;
+            padding-top: 1.875em;
+        }
+        
+        .slogan h1 {
+            font-size: 1.875em;
+            text-align: center;
+        }
+        
+        .redes{
+            text-align: center;
+        }
+        
+        .redes ul li a{
+            font-size: 1.87em;
+            padding: 0em 1.25em;
+        }
+        
+        .otros{
+            flex-wrap: wrap;
+            padding-top: 1.875em;
+            padding-bottom: 1.875em;
+            text-align: left;
+            justify-content: center;
+        }
+        
+        .pie {
+            font-size: 1.25em;
+            padding: 0.625em 1.563em;
+            text-align: left;
+        }
+        
+        .registro{
+            flex-direction: column;
+        }
+        
+}
